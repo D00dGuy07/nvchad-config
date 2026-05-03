@@ -1,9 +1,7 @@
 Install: 
 
-`sudo pacman -S clang bear curl openssh sshfs fuse3`
-
+`sudo pacman -S clang bear curl ssh sshfs fuse3`
 `sudo ln -s /usr/bin/fusermount3 /usr/bin/fusermount`
-
 `git clone git@github.com:D00dGuy07/nvchad-config.git ~/.config/nvim && nvim`
 
 **This repo is supposed to be used as config by NvChad users!**
