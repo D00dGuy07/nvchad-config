@@ -3,6 +3,26 @@ require("mason-lspconfig").setup({
     ensure_installed = { "basedpyright" },
 })
 
+vim.lsp.config("basedpyright", {
+  settings = {
+    basedpyright = {
+      analysis = {
+        typeCheckingMode = "off",
+
+        diagnosticSeverityOverrides = {
+          reportUnusedImport = "warning"
+        },
+        inlayHints = {
+          callArgumentNames = true,
+          variableTypes = true
+        },
+      },
+    },
+  },
+})
+
+vim.lsp.inlay_hint.enable(true)
+
 local servers = { "html", "cssls", "clangd", "basedpyright" }
 vim.lsp.enable(servers)
 
