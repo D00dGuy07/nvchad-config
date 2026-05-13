@@ -7,8 +7,6 @@ vim.lsp.config("basedpyright", {
   settings = {
     basedpyright = {
       analysis = {
-        typeCheckingMode = "off",
-
         diagnosticSeverityOverrides = {
           reportUnusedImport = "warning"
         },
